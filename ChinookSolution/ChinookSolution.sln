@@ -6,6 +6,7 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Chinookweb", "Chinookweb\", "{C60C0D7E-CF47-4796-A1AC-0EF9545EAFF0}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		ProjectReferences = "{37610a5f-389f-4c33-9190-40f44daa1e21}|ChinookSystem.dll;{4ea39324-f1f6-452d-b479-a6e868af7376}|ChinookSystem.Data.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_50330"
 		Debug.AspNetCompiler.PhysicalPath = "Chinookweb\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50330\"
@@ -21,6 +22,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Chinookweb", "Chinookweb\",
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "50330"
+		SlnRelativePath = "Chinookweb\"
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
