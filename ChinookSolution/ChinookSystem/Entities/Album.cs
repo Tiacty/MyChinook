@@ -12,7 +12,21 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ChinookSystem.Entities
 {
-   public class Album
+    [Table("Albums")]
+    public class Album
     {
+        [Key]
+        public int AlbumId { get; set; }
+        public string Title { get; set; }
+        public int ArtistId { get; set; }
+        public int ReleaseYear { get; set; }
+        
+        public int ReleaseLable { get; set; }
+
+        //Navigation properties
+        public virtual ICollection<Track> Tracks { get; set; }
+        public virtual Artist Artist { get; set; }
+
     }
+
 }

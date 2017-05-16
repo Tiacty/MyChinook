@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 #region Additional Namespaces
 using System.Data.Entity;
+using ChinookSystem.Entities;
+
 #endregion
 namespace ChinookSystem.DAL
 {
@@ -19,5 +21,9 @@ namespace ChinookSystem.DAL
         // DbContext using : base()
         public ChinookCentext() : base("ChinookDB")
         { }
+        public DbSet<Artist> Artists { get; set; }
+        public DbSet<Album> Albums { get; set; }
+        public DbSet<Track> Tracks { get; set; }
+
     }
 }
